@@ -1,0 +1,14 @@
+[Unit]
+Description=UPS MQTT Publisher Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /etc/pwrstatd-ha.py
+WorkingDirectory=/etc
+StandardOutput=journal
+StandardError=journal
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
