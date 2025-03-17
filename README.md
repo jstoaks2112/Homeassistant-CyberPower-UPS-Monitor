@@ -81,9 +81,10 @@ Now your UPS monitoring will always run in the background!
 
 Now Add this to your Homeassistant Configuration.yaml file to create the MQTT entities
 
+
 Copy and Paste this whole block -
 
-# Example configuration.yaml entry
+Example configuration.yaml entry
 mqtt:
     - sensor:
     - name: "UPS State"
